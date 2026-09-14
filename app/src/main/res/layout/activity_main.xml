@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F1E8"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===================================================== -->
+        <!-- BRAND / WELCOME PANEL -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4D2B1D"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingTop="42dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="36dp">
+
+            <!-- LOGO -->
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:background="@drawable/bg_logo_circle"
+                android:gravity="center"
+                android:text="SAÉ\nCAFE\nROJEL"
+                android:textAlignment="center"
+                android:textColor="#F3C768"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- MEMBER LOYALTY SYSTEM -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="MEMBER LOYALTY SYSTEM"
+                android:textColor="#E3BB68"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08" />
+
+            <!-- TITLE -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Selamat datang\nkembali."
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp" />
+
+            <!-- DESCRIPTION -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Masuk ke akun member kamu untuk melihat point, reward, dan riwayat transaksi di SAÉ CAFE ROJEL."
+                android:textColor="#E7DDD5"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+            <!-- BENEFIT CARD -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_benefit_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEMBER BENEFIT"
+                    android:textColor="#C9BCB2"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Point &amp; Reward"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Nikmati pengalaman loyalty yang lebih praktis setiap kali berkunjung ke café."
+                    android:textColor="#D8CCC4"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp" />
+
+            </LinearLayout>
+
+            <!-- FOOTER -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="SAÉ CAFE ROJEL • Member Area"
+                android:textColor="#B9ABA2"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- ===================================================== -->
+        <!-- LOGIN FORM -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFDFC"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingTop="36dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="42dp">
+
+            <!-- WELCOME BACK -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME BACK"
+                android:textColor="#805946"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12" />
+
+            <!-- TITLE -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Masuk ke Akun"
+                android:textColor="#2B1A13"
+                android:textSize="31sp"
+                android:textStyle="bold" />
+
+            <!-- DESCRIPTION -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gunakan nomor WhatsApp untuk Customer atau username untuk Admin dan Staff."
+                android:textColor="#907A6D"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- USERNAME -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Username / Nomor WhatsApp"
+                android:textColor="#4D2B1D"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:hint="Nomor WhatsApp / username Admin / Staff"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#2B1A13"
+                android:textColorHint="#B6A69C"
+                android:textSize="14sp" />
+
+            <!-- PASSWORD -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textColor="#4D2B1D"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:hint="Masukkan password"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#2B1A13"
+                android:textColorHint="#B6A69C"
+                android:textSize="14sp" />
+
+            <!-- LOGIN BUTTON -->
+
+            <TextView
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bg_login_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="Masuk"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- DIVIDER -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="28dp"
+                android:background="#E8DED5" />
+
+            <!-- REGISTER -->
+
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:text="Belum punya akun? Daftar Member"
+                android:textColor="#4D2B1D"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
